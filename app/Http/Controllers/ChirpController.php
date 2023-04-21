@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Chirp;
+use App\Models\User;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
@@ -14,9 +15,9 @@ class ChirpController extends Controller
      * Display a listing of the resource.
      */
     public function index(): Response
-    {
+    {   
         return Inertia::render('Chirps/Index', [
-            //
+            'chirps' => Chirp::with('user:id,name')->latest()->get(),
         ]);
     }
 
