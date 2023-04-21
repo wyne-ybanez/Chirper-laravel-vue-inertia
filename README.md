@@ -1,3 +1,28 @@
+## Chirper
+
+CRUD application.
+
+Configure your `.env` file.
+
+To start:
+```
+composer install && npm install
+```
+
+Then, run command in the root directory:
+```
+php artisan run serve
+```
+
+Also run:
+```
+npm run dev
+```
+
+Go to the url, "APP_URL" based in your `.env`
+
+<hr>
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
