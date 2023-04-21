@@ -32,7 +32,6 @@ const form = useForm({
                     v-for="chirp in chirps"
                     :key="chirp.id"
                     :chirp="chirp"
-                    :user="user"
                 />
             </div>
         </div>
